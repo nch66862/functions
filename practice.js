@@ -17,16 +17,16 @@ const add = (first, second, third) => {
 }
 console.log(add(17, 4, 11))
 
-const go = (direction, speed) => {
-    if (speed > 75) {
-        console.log(`The car is moving ${direction} at ${speed} mph. SLOW DOWN!`)
-    }
-    else {
-        console.log(`The car is moving ${direction} at ${speed} mph`)
-    }
-}
-go("forward", 76)
-go("backward", 15)
+// const go = (direction, speed) => {
+//     if (speed > 75) {
+//         console.log(`The car is moving ${direction} at ${speed} mph. SLOW DOWN!`)
+//     }
+//     else {
+//         console.log(`The car is moving ${direction} at ${speed} mph`)
+//     }
+// }
+// go("forward", 76)
+// go("backward", 15)
 
 const evenOrOdd = (number) => {
     let result = ""
@@ -140,3 +140,9 @@ const dayPlanner = (firstChore, secondChore, thirdChore, person, day) => {
 }
 
 console.log(dayPlanner(choreOne, choreTwo, choreThree, person, "Thursday"))
+
+const go = (direction, speed) => {
+    console.log(`The car is moving ${direction} at ${speed} mph`)
+}
+
+go("toward NSS", 1870)
