@@ -28,20 +28,20 @@ console.log(add(17, 4, 11))
 // go("forward", 76)
 // go("backward", 15)
 
-const evenOrOdd = (number) => {
-    let result = ""
-    if (number % 2 == 0) {
-        result = "even"
-    }
-    else {
-        result = "odd"
-    }
-    console.log(result)
-}
+// const evenOrOdd = (number) => {
+//     let result = ""
+//     if (number % 2 == 0) {
+//         result = "even"
+//     }
+//     else {
+//         result = "odd"
+//     }
+//     console.log(result)
+// }
 
-evenOrOdd(6)
-evenOrOdd(7)
-evenOrOdd(0)
+// evenOrOdd(6)
+// evenOrOdd(7)
+// evenOrOdd(0)
 
 const words = [
     "The", "killing", "complex", "houses",
@@ -146,3 +146,18 @@ const go = (direction, speed) => {
 }
 
 go("toward NSS", 1870)
+
+const evenOrOdd = (num) => {
+    let result = ""
+    if (num % 2 === 0) {
+        result = "Even"
+    }
+    else if (num % 2 !== 0) {
+        result = "Odd"
+    }
+    return result
+}
+
+const oddOrEven = evenOrOdd(91)
+
+console.log(oddOrEven)
